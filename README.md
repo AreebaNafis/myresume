@@ -1,2 +1,2 @@
-# myresume
-Using CSS and HTML
+# myResume
+Using Basic CSS and HTML skills
