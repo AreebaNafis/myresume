@@ -130,3 +130,24 @@ details {
         padding-left: 100px;
     }
   }
+@media (max-width: 400px){
+   .flexed{
+    flex-direction: column;
+    text-align: center;
+   }
+   .flexed img{
+    height: 150px;
+    width: 140px;
+   }
+   .flexed3{
+    flex-direction: column;
+    align-items: center;
+   }
+   ul{
+    list-style-type: none;
+    padding-left: 0%;
+    }
+    ul li{
+        padding: 5px 0;
+    }
+  }
