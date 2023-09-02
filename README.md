@@ -1,2 +1,2 @@
 # myResume
-Using Basic CSS and HTML skills
+Resposive/downloadable resume with FAQs
