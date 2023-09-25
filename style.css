@@ -29,7 +29,7 @@ img{
     margin: 2px 2px 2px 2px;
     border-radius: 50%;
 }
-.flexed2,.flexed3{
+.flexed3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -56,11 +56,20 @@ ul{
 }
 .flexed2 ul{
     margin: 0px 0px;
-    padding-left: 15%;
+    
+
 }
 .flexed2{
+    display: flex;  
+    justify-content: space-evenly;
     padding-left: 10px;
     padding-bottom: 10px;
+    margin-right: 25px;
+    flex-wrap: wrap;
+}
+.inside{
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -101,6 +110,7 @@ details {
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
   }
+ 
   
   details[open] {
     padding: 0.5em;
@@ -109,28 +119,9 @@ details {
     border-bottom: 1px solid #aaa;
     margin-bottom: 0.5em;
   }
-  @media (min-width: 960px){
-    *{
-        text-align: center;
-    }
-    ul{
-        list-style-type: none;
-    }
-    details{
-        border: 0;
-    }
-    summary{
-        text-align: left;
-    }
-    .footr img{
-        width: 40px;
-        height: 40px;
-    }
-    h2{
-        padding-left: 100px;
-    }
-  }
-@media (max-width: 400px){
+
+ 
+  @media (max-width: 400px){
    .flexed{
     flex-direction: column;
     text-align: center;
@@ -150,4 +141,66 @@ details {
     ul li{
         padding: 5px 0;
     }
+    
   }
+  @media (max-width:700px) {
+    .inside{
+
+        justify-content: space-between;
+        width: 100%;
+    }
+  }
+  @media screen and (min-width:700px) and (max-width:920px) {
+    ul{
+        list-style-type: none;
+        
+    }
+    *{
+        text-align: center;
+    }
+    details{
+        border: 0;
+    }
+    summary{
+        text-align: left;
+    }
+  }
+  
+  @media (max-width:920px) {
+    
+    .inside{
+       
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+  }
+  
+  @media (min-width: 960px){
+    *{
+        text-align: center;
+    }
+   
+    ul{
+        list-style-type: none;
+    }
+    details{
+        border: 0;
+    }
+    summary{
+        text-align: left;
+    }
+    .footr img{
+        width: 40px;
+        height: 40px;
+    }
+    h2{
+        padding-left: 100px;
+    }
+   
+    .flexed2 ul{
+        padding-inline-start: 0%;
+    }
+  
+  }
+
